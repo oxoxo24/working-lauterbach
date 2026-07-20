@@ -3,453 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Working with photographer Steffen Lauterbach in Bern, Switzerland.">
+  <meta name="theme-color" content="#f2efe7">
   <title>Working Together | Steffen Lauterbach</title>
-  <meta name="description" content="Clear information about commissioned sessions, creative collaborations and model bookings with photographer Steffen Lauterbach in Bern, Switzerland.">
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
-
 <body>
-  <header class="cover section">
-    <div class="inner cover-grid">
-      <div class="cover-copy">
-        <p class="eyebrow">Steffen Lauterbach · Bern, Switzerland</p>
-        <h1>Working<br>Together</h1>
-        <p class="cover-lead">
-          Every shoot begins by defining its purpose.
-        </p>
-        <p class="cover-text">
-          Depending on the goal, we work in one of three clearly separated formats:
-          you commission me, we create a free project together, or I book you for one
-          of my own photographic works.
-        </p>
-
-        <nav class="cover-nav" aria-label="Forms of collaboration">
-          <a href="#commission">01 · You commission me</a>
-          <a href="#collaboration">02 · Creative collaboration</a>
-          <a href="#model-booking">03 · I book a model</a>
-        </nav>
-      </div>
-
-      <figure class="cover-figure">
-        <img src="assets/portrait.jpg" alt="Portrait of photographer Steffen Lauterbach">
-        <figcaption>Human Presence · Human Form · Human Context</figcaption>
-      </figure>
-    </div>
+  <div class="page-loader" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Back to top">
+      <span>Steffen Lauterbach</span><small>Photography · Bern</small>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span>Menu</span><i></i>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"></nav>
   </header>
 
-  <main>
-    <section class="section purpose">
-      <div class="inner">
-        <p class="chapter">01 / Purpose before process</p>
+  <main id="top">
+    <section class="hero section" id="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" id="hero-eyebrow"></p>
+          <h1 id="hero-title"></h1>
+          <p class="hero-lead" id="hero-lead"></p>
+          <p class="hero-description" id="hero-description"></p>
+          <nav class="hero-links" id="hero-links" aria-label="Working formats"></nav>
+        </div>
+        <figure class="portrait-frame reveal">
+          <img id="hero-image" src="" alt="">
+          <figcaption id="hero-caption"></figcaption>
+        </figure>
+      </div>
+    </section>
 
-        <div class="statement-grid">
-          <p class="statement">
-            The purpose of the shoot determines who sets the direction, what is
-            delivered and how the images may be used.
-          </p>
-
-          <div class="body-copy">
-            <p>
-              Clear expectations protect everyone involved. Before a date is confirmed,
-              we define whether the session is a commissioned production, a free creative
-              collaboration or a paid model booking for one of my own projects.
-            </p>
-            <p>
-              These formats are not interchangeable. A collaboration is not a free
-              portfolio commission, and a model booking is not a shared production in
-              which both sides pursue separate visual goals.
-            </p>
+    <section class="section intro-section" id="formats">
+      <div class="shell">
+        <p class="eyebrow reveal">Three ways to work together</p>
+        <div class="intro-grid">
+          <h2 class="display reveal">The purpose comes first.</h2>
+          <div class="intro-copy reveal">
+            <p>Clear expectations make stronger work. Before a date is confirmed, we decide which of the three formats applies.</p>
+            <p>They are deliberately different. A free project is not an unpaid portfolio commission, and a paid model booking is not a shared production with competing goals.</p>
           </div>
         </div>
+        <div class="format-cards" id="format-cards"></div>
+        <aside class="rights-rule reveal">
+          <span>One rule for every format</span>
+          <p>Unless a written limitation is agreed before the shoot, I may select, edit and use photographs from every session for my portfolio, website, social media, publications, exhibitions and other artistic, editorial or self-promotional purposes.</p>
+        </aside>
+      </div>
+    </section>
 
-        <div class="format-overview">
-          <a href="#commission" class="format-card">
-            <span>01</span>
-            <h2>You commission me</h2>
-            <p>Your objectives define the production.</p>
-          </a>
+    <div id="format-sections"></div>
 
-          <a href="#collaboration" class="format-card">
-            <span>02</span>
-            <h2>Creative collaboration</h2>
-            <p>A shared project built around my photographic work.</p>
-          </a>
-
-          <a href="#model-booking" class="format-card">
-            <span>03</span>
-            <h2>I book a model</h2>
-            <p>The model is hired for a defined artistic concept.</p>
-          </a>
+    <section class="section trust-section" id="trust">
+      <div class="shell">
+        <p class="eyebrow reveal" id="trust-eyebrow"></p>
+        <div class="trust-grid">
+          <h2 class="display reveal" id="trust-title"></h2>
+          <p class="trust-intro reveal" id="trust-intro"></p>
         </div>
+        <div class="trust-list reveal" id="trust-items"></div>
+        <blockquote class="large-quote reveal" id="trust-quote"></blockquote>
+      </div>
+    </section>
 
-        <div class="rights-notice">
-          <p class="service-title">A rule applying to every format</p>
-          <p>
-            Unless a written limitation is agreed before the shoot, I may select, edit,
-            publish and otherwise use photographs from every session for my portfolio,
-            website, social media, publications, exhibitions and other artistic,
-            editorial or self-promotional purposes. The model's own delivery and usage
-            rights depend on the selected working format.
-          </p>
+    <section class="section about-section" id="about">
+      <div class="shell">
+        <p class="eyebrow reveal" id="about-eyebrow"></p>
+        <h2 class="display reveal" id="about-title"></h2>
+        <div class="about-grid">
+          <div class="about-copy reveal" id="about-copy"></div>
+          <div class="image-pair" id="about-images"></div>
         </div>
       </div>
     </section>
 
-    <section class="section dark format-section" id="commission">
-      <div class="inner">
-        <p class="chapter">02 / Commissioned sessions</p>
-
-        <div class="format-heading">
-          <div>
-            <p class="format-number">01</p>
-            <h2>You<br>commission me</h2>
-          </div>
-
-          <div class="format-intro">
-            <p class="large-copy">
-              I work on assignment for models, agencies, artists, brands and private clients.
-            </p>
-            <p>
-              The purpose, visual direction and intended use are agreed before the shoot.
-              The production is created for your requirements rather than as part of one
-              of my free photographic projects. Unless a written limitation is agreed in
-              advance, I may also select, edit and use photographs from the session for my
-              portfolio, website, social media, publications, exhibitions and other
-              self-promotional or artistic purposes.
-            </p>
-          </div>
-        </div>
-
-        <div class="detail-grid">
-          <article>
-            <h3>Direction</h3>
-            <p>
-              We define the concept, atmosphere, styling, required perspectives and intended
-              result together. References can be used to establish direction without simply
-              copying existing images.
-            </p>
-          </article>
-
-          <article>
-            <h3>Booking</h3>
-            <p>
-              Sessions are booked in two-hour blocks. A studio base fee applies to productions
-              in my Bernapark studio. Additional time, styling, hair and make-up, travel,
-              locations or special production requirements are agreed in advance.
-            </p>
-          </article>
-
-          <article>
-            <h3>Delivery</h3>
-            <p>
-              The number of final edited images, selection process, delivery schedule and
-              usage rights are defined as part of the booking. Only the agreed final selection
-              is delivered. RAW files, test images and rejected photographs are not included
-              unless this is explicitly added to the commission.
-            </p>
-          </article>
-        </div>
-
-        <div class="service-list">
-          <p class="service-title">Suitable for</p>
-          <div>
-            <span>Model portfolios & sedcards</span>
-            <span>Agency updates</span>
-            <span>Artist portraits</span>
-            <span>Editorials & campaigns</span>
-            <span>Brands & companies</span>
-            <span>Events</span>
-            <span>Digital, analog & Polaroid productions</span>
-          </div>
-        </div>
-      </div>
-
-      <img class="wide-image" src="assets/priscilia.jpg" alt="">
-    </section>
-
-    <section class="section format-section" id="collaboration">
-      <div class="inner">
-        <p class="chapter">03 / Free photographic projects</p>
-
-        <div class="format-heading">
-          <div>
-            <p class="format-number">02</p>
-            <h2>Creative<br>collaboration</h2>
-          </div>
-
-          <div class="format-intro">
-            <p class="large-copy">
-              A creative collaboration is participation in a photographic project — not a free commissioned session.
-            </p>
-            <p>
-              The starting point is my visual language, an existing series or a concept I
-              want to develop. The strongest work emerges when both sides understand the
-              intention and consciously want to become part of it.
-            </p>
-          </div>
-        </div>
-
-        <div class="detail-grid">
-          <article>
-            <h3>Shared process</h3>
-            <p>
-              Openness, presence and active participation matter. Ideas and references are
-              welcome, but the project is not designed around a list of portfolio wishes or
-              predetermined social-media images.
-            </p>
-          </article>
-
-          <article>
-            <h3>Preparation</h3>
-            <p>
-              Styling, clothing, hair and make-up are discussed beforehand. Unless otherwise
-              agreed, models prepare these themselves and bring options that support the
-              photographic direction.
-            </p>
-          </article>
-
-          <article>
-            <h3>Selection & publishing</h3>
-            <p>
-              I select, edit and sequence the photographs I publish under my name. The model
-              may receive the unedited RAW files from the collaboration and may independently
-              select, edit and publish them. Both sides may use the photographs according to
-              their own needs without requiring approval for every individual publication.
-              Authorship, credits and any exceptional limitations are agreed before the shoot.
-            </p>
-          </article>
-        </div>
-
-        <blockquote>
-          A free collaboration gives both sides independent creative use of the material — it is not a free commissioned portfolio session.
-        </blockquote>
-      </div>
-
-      <img class="wide-image" src="assets/etna.jpg" alt="">
-    </section>
-
-    <section class="section dark format-section" id="model-booking">
-      <div class="inner">
-        <p class="chapter">04 / Models booked for my work</p>
-
-        <div class="format-heading">
-          <div>
-            <p class="format-number">03</p>
-            <h2>I book<br>a model</h2>
-          </div>
-
-          <div class="format-intro">
-            <p class="large-copy">
-              For selected projects, I hire professional models to realise a defined photographic concept.
-            </p>
-            <p>
-              In this format, the model is booked for my production. The creative direction,
-              styling framework, image selection and publication are determined by the project.
-              The model's role, fee and usage are agreed before the booking is confirmed.
-            </p>
-          </div>
-        </div>
-
-        <div class="detail-grid">
-          <article>
-            <h3>Project</h3>
-            <p>
-              The concept already exists or has a clearly defined direction. The booking is
-              based on whether a model's presence, movement, character and experience fit the work.
-            </p>
-          </article>
-
-          <article>
-            <h3>Compensation</h3>
-            <p>
-              Fee, duration, travel, accommodation, styling, hair and make-up, locations and
-              usage are discussed individually and confirmed before the shoot. There is no
-              undefined “small modelling fee”. Unless otherwise agreed in writing, the fee
-              compensates the model's participation and does not restrict my later artistic,
-              editorial or self-promotional use of the photographs.
-            </p>
-          </article>
-
-          <article>
-            <h3>Authorship</h3>
-            <p>
-              The images are created for my artistic or editorial production. Final selection,
-              editing, sequencing and publication remain part of my photographic authorship.
-              The model does not automatically receive the full image material; any photographs
-              supplied for personal use are agreed as part of the booking.
-            </p>
-          </article>
-        </div>
-      </div>
-
-      <img class="wide-image" src="assets/jime.jpg" alt="">
-    </section>
-
-    <section class="section respect">
-      <div class="inner">
-        <p class="chapter">05 / Respect & trust</p>
-
-        <div class="respect-intro">
-          <p class="respect-lead">
-            Clarity is part of trust.
-          </p>
-
-          <div class="respect-copy">
-            <p>
-              A professional shoot requires respect for personal boundaries, agreed concepts
-              and the purpose for which images are created. No change of direction, styling or
-              level of exposure should happen through pressure or ambiguity. Consent to create
-              an image and the rights to use that image are clarified before the session.
-            </p>
-            <p>
-              Questions and limits can be expressed at any time. Agreement to one image,
-              outfit or situation never automatically means agreement to another.
-            </p>
-          </div>
-        </div>
-
-        <div class="expectation-box">
-          <p class="expectation-title">Before every shoot we clarify</p>
-          <div class="expectation-grid">
-            <p>Which of the three working formats applies</p>
-            <p>Who defines the creative direction</p>
-            <p>The intended images and use</p>
-            <p>Styling, hair, make-up and level of exposure</p>
-            <p>Selection, editing and delivery</p>
-            <p>Publication, crediting and reciprocal usage rights</p>
-            <p>Fees, expenses and production costs</p>
-            <p>Who will be present during the shoot</p>
-          </div>
-        </div>
-
-        <blockquote>
-          Trust is not assumed. It is built through clarity, consent and reliability.
-        </blockquote>
+    <section class="section faq-section" id="faq">
+      <div class="shell">
+        <p class="eyebrow reveal" id="faq-eyebrow"></p>
+        <h2 class="display reveal" id="faq-title"></h2>
+        <div class="faq-list" id="faq-list"></div>
       </div>
     </section>
 
-    <section class="section about">
-      <div class="inner">
-        <p class="chapter">06 / About the work</p>
-        <h2>Human presence,<br>not performance.</h2>
-
-        <div class="about-layout">
-          <div class="body-copy">
-            <p>
-              I do not photograph people as classical models, but as personalities. I am
-              interested in presence, character, form and the small moments between obvious gestures.
-            </p>
-            <p>
-              My work moves between portrait, form study and documentary observation. I work
-              slowly and consciously. The aim is not to produce as many looks as possible,
-              but to create a small number of strong images with a coherent photographic language.
-            </p>
+    <section class="section studio-section" id="studio">
+      <div class="shell studio-grid">
+        <div class="studio-copy reveal">
+          <p class="eyebrow" id="studio-eyebrow"></p>
+          <h2 class="display" id="studio-title"></h2>
+          <p id="studio-description"></p>
+          <div class="studio-facts" id="studio-facts"></div>
+          <div class="contact-block">
+            <span>Enquiries</span>
+            <p id="contact-text"></p>
+            <a id="email-link" href=""></a>
+            <a id="instagram-link" href="" target="_blank" rel="noopener"></a>
           </div>
-
-          <div class="image-pair">
-            <img src="assets/rossana.jpg" alt="">
-            <img src="assets/anto.jpg" alt="">
-          </div>
+          <p class="closing" id="closing"></p>
         </div>
-      </div>
-    </section>
-
-    <section class="section faq">
-      <div class="inner">
-        <p class="chapter">07 / Practical questions</p>
-        <h2>Before you write</h2>
-
-        <div class="faq-grid">
-          <article>
-            <h3>I need specific images for my portfolio. Is that a collaboration?</h3>
-            <p>
-              No. When your requirements determine the concept and result, this is a commissioned
-              session and is booked in two-hour blocks.
-            </p>
-          </article>
-
-          <article>
-            <h3>Can I apply for a creative collaboration?</h3>
-            <p>
-              Yes. Send a current portfolio and explain what connects you to my work. A collaboration
-              is considered when there is a strong fit with a current or upcoming project.
-            </p>
-          </article>
-
-          <article>
-            <h3>Do you pay models?</h3>
-            <p>
-              Yes, when I book a model for my own production. The fee and all relevant conditions
-              are agreed individually before confirmation.
-            </p>
-          </article>
-
-          <article>
-            <h3>Do I need professional experience?</h3>
-            <p>
-              Not always. Presence, openness and reliability can matter more than experience.
-              Professional model bookings, however, may require specific skills or agency experience.
-            </p>
-          </article>
-
-          <article>
-            <h3>Can I publish the images?</h3>
-            <p>
-              Yes, according to the agreed format. In every format I retain the right to use
-              photographs from the session for my own artistic, editorial and self-promotional
-              work unless a written limitation is agreed beforehand. In free collaborations,
-              the model may also receive and independently use the unedited RAW files.
-            </p>
-          </article>
-
-          <article>
-            <h3>Can someone accompany me?</h3>
-            <p>
-              This can be discussed beforehand. For certain projects, especially with younger
-              models, a parent, guardian, stylist or another agreed person should be present.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section studio">
-      <div class="inner studio-grid">
-        <div>
-          <p class="chapter">08 / Studio & contact</p>
-          <h2>Bernapark</h2>
-
-          <p>
-            My 103 m² studio is located in Bernapark, Deisswil near Bern. It has a five-metre
-            ceiling, a large window front and fully darkenable rooms for daylight and controlled
-            studio-light productions.
-          </p>
-
-          <div class="studio-facts">
-            <span>Bernapark 1</span>
-            <span>CH-3066 Stettlen</span>
-            <span>103 m² studio</span>
-            <span>5 m ceiling height</span>
-            <span>Professional flash & continuous light</span>
-            <span>Indoor and nearby outdoor locations</span>
-          </div>
-
-          <div class="contact">
-            <h3>Enquiries</h3>
-            <p>
-              Please state which working format you are interested in, your intended dates,
-              location, concept and relevant portfolio or references.
-            </p>
-            <p>
-              <a href="mailto:steffen@lauterbach.ch">steffen@lauterbach.ch</a><br>
-              <a href="https://instagram.com/steffen.lauterbach_" target="_blank" rel="noopener">@steffen.lauterbach_</a>
-            </p>
-          </div>
-
-          <p class="final">Maybe our collaboration begins with clarity.</p>
-        </div>
-
-        <img src="assets/studio.jpg" alt="Studio in Bernapark near Bern">
+        <figure class="portrait-frame studio-image reveal">
+          <img id="studio-image" src="" alt="">
+        </figure>
       </div>
     </section>
   </main>

@@ -1,0 +1,190 @@
+{
+  "site": {
+    "title": "Working Together",
+    "owner": "Steffen Lauterbach",
+    "location": "Bern, Switzerland",
+    "intro": "Every shoot begins with one simple question: what are we creating, and for whom?",
+    "description": "There are three clear ways to work together. You commission a session, we meet for a free photographic project, or I book a model for my own work.",
+    "email": "steffen@lauterbach.ch",
+    "instagram": "https://instagram.com/steffen.lauterbach_",
+    "instagramLabel": "@steffen.lauterbach_"
+  },
+  "hero": {
+    "image": "assets/hero-portrait-4x5.jpg",
+    "alt": "Portrait placeholder",
+    "caption": "Human Presence · Human Form · Human Context"
+  },
+  "workingFormats": [
+    {
+      "id": "commission",
+      "number": "01",
+      "shortTitle": "You commission me",
+      "navTitle": "Commissioned session",
+      "lead": "You need specific images. We agree on the result before the shoot.",
+      "description": "I work on assignment for models, agencies, artists, brands and private clients. Your purpose defines the production: portfolio, sedcard, campaign, portrait or another clear requirement.",
+      "tone": "dark",
+      "image": "assets/commission-4x5.jpg",
+      "alt": "Commissioned portrait placeholder",
+      "details": [
+        {
+          "title": "Direction",
+          "text": "We agree on concept, mood, styling, required perspectives and intended use. References help us define the direction without copying existing images."
+        },
+        {
+          "title": "Booking",
+          "text": "Sessions are booked in two-hour blocks. A studio base fee applies in Bernapark. Additional time, travel, styling, hair and make-up or special production requirements are agreed beforehand."
+        },
+        {
+          "title": "Delivery",
+          "text": "The number of edited images, selection process, delivery time and usage rights are defined before booking. RAW files and rejected photographs are not included unless expressly agreed."
+        }
+      ],
+      "note": "Unless a written restriction is agreed before the shoot, I may also use selected photographs for my portfolio, website, social media, publications, exhibitions and other artistic or self-promotional purposes.",
+      "tags": [
+        "Model portfolios",
+        "Agency updates",
+        "Artist portraits",
+        "Editorials",
+        "Campaigns",
+        "Brands",
+        "Digital",
+        "Analog",
+        "Polaroid"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "number": "02",
+      "shortTitle": "Creative collaboration",
+      "navTitle": "Free project",
+      "lead": "We work together because the project and my visual language interest both of us.",
+      "description": "A free collaboration is not a commissioned portfolio session. It begins with an existing series, an artistic question or a concept I want to develop with the right person.",
+      "tone": "light",
+      "image": "assets/collaboration-4x5.jpg",
+      "alt": "Creative collaboration placeholder",
+      "details": [
+        {
+          "title": "Shared process",
+          "text": "Ideas are welcome, but the session is not built around a list of portfolio wishes or predetermined social-media images. Openness, presence and trust matter more than producing many looks."
+        },
+        {
+          "title": "Preparation",
+          "text": "Clothing, styling, hair and make-up are discussed beforehand. Unless agreed otherwise, the model prepares these and brings options that support the project."
+        },
+        {
+          "title": "Images",
+          "text": "I select, edit and sequence the photographs published under my name. The model may receive the unedited RAW files, make an independent selection, edit them and use them freely. Both sides credit each other."
+        }
+      ],
+      "quote": "A free collaboration gives both sides independent creative use of the material.",
+      "note": "Both sides may use the photographs according to their own needs. Exceptional limits, first-publication arrangements or exclusions must be agreed in writing before the shoot."
+    },
+    {
+      "id": "model-booking",
+      "number": "03",
+      "shortTitle": "I book a model",
+      "navTitle": "Model booking",
+      "lead": "I hire a model because their presence fits a defined photographic project.",
+      "description": "The concept and direction come from my work. The model is booked to realise that production, rather than to receive a portfolio session.",
+      "tone": "dark",
+      "image": "assets/model-booking-4x5.jpg",
+      "alt": "Booked model placeholder",
+      "details": [
+        {
+          "title": "Project",
+          "text": "The project already exists or has a clear direction. The booking depends on whether the model's character, movement, presence and experience fit the work."
+        },
+        {
+          "title": "Fee",
+          "text": "Fee, duration, travel, accommodation, styling, hair and make-up and usage are agreed individually before confirmation. There is no undefined small modelling fee."
+        },
+        {
+          "title": "Authorship",
+          "text": "Selection, editing, sequencing and publication remain part of my photographic authorship. The model does not automatically receive the complete material; personal-use images can be agreed as part of the booking."
+        }
+      ],
+      "note": "Unless otherwise agreed in writing, the model fee compensates participation and does not restrict my later artistic, editorial or self-promotional use of the photographs."
+    }
+  ],
+  "trust": {
+    "eyebrow": "Respect & trust",
+    "title": "Clarity is part of trust.",
+    "intro": "Before a shoot, we agree on the purpose, direction, boundaries and use of the images. During the session, every person can pause, question or refuse a change at any time.",
+    "items": [
+      "Which working format applies",
+      "Who defines the creative direction",
+      "What we intend to create",
+      "Styling and level of exposure",
+      "Selection, editing and delivery",
+      "Publication and crediting",
+      "Fees and production costs",
+      "Who will be present"
+    ],
+    "quote": "Trust is not assumed. It is built through clarity, consent and reliability."
+  },
+  "about": {
+    "eyebrow": "About the work",
+    "title": "Human presence, not performance.",
+    "paragraphs": [
+      "I photograph people as personalities rather than as classical models. I am interested in presence, character, form and the small moments between obvious gestures.",
+      "The work moves between portrait, form study and observation. I work slowly and consciously. The aim is not to create as many looks as possible, but a small number of strong images with a coherent language."
+    ],
+    "images": [
+      {
+        "src": "assets/about-portrait-4x5.jpg",
+        "alt": "Portrait work placeholder"
+      },
+      {
+        "src": "assets/about-form-4x5.jpg",
+        "alt": "Human form placeholder"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Practical questions",
+    "title": "Before you write",
+    "items": [
+      {
+        "question": "I need specific portfolio images. Is that a collaboration?",
+        "answer": "No. When your requirements define the concept and result, this is a commissioned session."
+      },
+      {
+        "question": "Can I apply for a free project?",
+        "answer": "Yes. Send a current portfolio and explain what connects you to my work. A collaboration is considered when there is a strong fit with a current project."
+      },
+      {
+        "question": "Do you pay models?",
+        "answer": "Yes, when I book a model for my own production. The fee and all relevant conditions are agreed before confirmation."
+      },
+      {
+        "question": "Do I need professional experience?",
+        "answer": "Not always. Presence, openness and reliability can matter more than experience. Some paid productions require specific professional skills."
+      },
+      {
+        "question": "Can I use the images?",
+        "answer": "Yes, according to the agreed format. In a free collaboration, the model may receive and independently use the unedited RAW files. In all formats, my own usage rights remain unless restricted in writing beforehand."
+      },
+      {
+        "question": "Can someone accompany me?",
+        "answer": "This can be discussed beforehand. Any accompanying person must be agreed before the session."
+      }
+    ]
+  },
+  "studio": {
+    "eyebrow": "Studio & contact",
+    "title": "Bernapark",
+    "description": "My 103 m² studio is located in Bernapark, Deisswil near Bern. It has a five-metre ceiling, a large window front and fully darkenable rooms for daylight and controlled studio-light productions.",
+    "facts": [
+      "Bernapark 1",
+      "CH-3066 Stettlen",
+      "103 m² studio",
+      "5 m ceiling height",
+      "Flash and continuous light",
+      "Indoor and nearby outdoor locations"
+    ],
+    "image": "assets/studio-4x5.jpg",
+    "alt": "Bernapark studio placeholder",
+    "contactText": "Please state which working format interests you, your preferred dates, location, concept and a current portfolio or reference.",
+    "closing": "Maybe our collaboration begins with clarity."
+  }
+}
