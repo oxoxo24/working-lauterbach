@@ -3,53 +3,128 @@
     "title": "Working Together",
     "owner": "Steffen Lauterbach",
     "location": "Bern, Switzerland",
-    "intro": "Every shoot begins with one simple question: what are we creating, and for whom?",
-    "description": "There are three clear ways to work together. You commission a session, we meet for a free photographic project, or I book a model for my own work.",
+    "intro": "Photography about people, space and presence.",
+    "description": "I am not interested in producing an idealised version of a person. I look for photographs in which gesture, light, distance, surroundings and the moments between actions become part of the image.",
     "email": "steffen@lauterbach.ch",
     "instagram": "https://instagram.com/steffen.lauterbach_",
-    "instagramLabel": "@steffen.lauterbach_"
+    "instagramLabel": "@steffen.lauterbach_",
+    "navigation": [
+      { "href": "#expect", "label": "Result" },
+      { "href": "#process", "label": "Process" },
+      { "href": "#work", "label": "Work" },
+      { "href": "#about", "label": "About" },
+      { "href": "#faq", "label": "FAQ" },
+      { "href": "#studio", "label": "Studio" }
+    ]
   },
   "hero": {
     "image": "assets/hero-portrait-4x5.jpg",
-    "alt": "Portrait placeholder",
-    "caption": "Human Presence · Human Form · Human Context"
+    "alt": "Photographic portrait by Steffen Lauterbach",
+    "caption": "People · Space · Presence",
+    "links": [
+      { "number": "01", "label": "What you can expect", "href": "#expect" },
+      { "number": "02", "label": "How I work", "href": "#process" },
+      { "number": "03", "label": "Ways to work together", "href": "#work" }
+    ]
+  },
+  "expect": {
+    "eyebrow": "What you can expect",
+    "title": "The photograph is more than its subject.",
+    "intro": "A successful session is not measured by how many different looks we produce. The aim is a coherent body of photographs with character — images that can remain direct, quiet, ambiguous or open, depending on what the work needs.",
+    "items": [
+      {
+        "title": "Not perfection",
+        "text": "Beauty can be present, but it is not the objective. Character, honesty and ambiguity are often more interesting than an idealised image."
+      },
+      {
+        "title": "The whole frame matters",
+        "text": "The person does not always have to dominate the photograph. Space, light, objects, shadows and other people can carry equal weight."
+      },
+      {
+        "title": "Moments over poses",
+        "text": "Some photographs are directed. Others appear while moving, waiting, speaking, turning away or simply doing nothing for a moment."
+      },
+      {
+        "title": "A connected result",
+        "text": "I am interested in photographs that belong together. The result may move between portrait, observation and context while remaining one visual language."
+      }
+    ],
+    "series": {
+      "layout": "feature-thumbs",
+      "caption": "A person can be the centre of the image — or one element inside a larger situation.",
+      "images": [
+        { "src": "assets/etna.jpg", "alt": "Portrait and presence study" },
+        { "src": "assets/jime.jpg", "alt": "Photograph exploring person and space" },
+        { "src": "assets/rossana.jpg", "alt": "Observational portrait" },
+        { "src": "assets/priscilia.jpg", "alt": "Photographic study of presence" }
+      ]
+    }
+  },
+  "process": {
+    "eyebrow": "How I work",
+    "title": "Construct the situation. Then observe.",
+    "paragraphs": [
+      "I work from the position of an observer, even when a portrait session is carefully planned. Light, space, clothing or a location may be deliberately constructed, but once the situation exists I prefer to watch what develops inside it rather than constantly interfere with it.",
+      "I do not photograph continuously and I do not need to replace one pose with the next. I often stay with a position, a light or a space, give it time and look for the point at which gesture, expression, distance and surroundings come together.",
+      "This requires concentration from both sides. Mutual trust, clear communication and respect for personal boundaries are simply part of that process."
+    ],
+    "quote": "I am less interested in producing many different photographs than in finding the strongest photograph within a situation.",
+    "series": {
+      "layout": "strip",
+      "caption": "Small changes can alter the meaning of an image more than a completely new setup.",
+      "images": [
+        { "src": "assets/simone.jpg", "alt": "Observed portrait moment" },
+        { "src": "assets/selina.jpg", "alt": "Quiet photographic moment" },
+        { "src": "assets/anto.jpg", "alt": "Portrait in context" }
+      ]
+    }
+  },
+  "work": {
+    "eyebrow": "Ways to work together",
+    "title": "Two different starting points.",
+    "intro": "You either commission me for a defined photographic purpose, or we meet because a free project connects with both of us. The distinction is simple and helps us keep expectations clear."
   },
   "workingFormats": [
     {
       "id": "commission",
       "number": "01",
       "shortTitle": "You commission me",
-      "navTitle": "Commissioned session",
-      "lead": "You need specific images. We agree on the result before the shoot.",
-      "description": "I work on assignment for models, agencies, artists, brands and private clients. Your purpose defines the production: portfolio, sedcard, campaign, portrait or another clear requirement.",
+      "navTitle": "Commissioned work",
+      "lead": "You need photographs for a defined purpose. We agree on what they need to communicate before we begin.",
+      "description": "A commission can result in a clear and direct portrait, an editorial series, campaign imagery or quieter photographs in which the person becomes part of a larger space or situation. The purpose guides the work, while the photographic language remains recognisably mine.",
       "tone": "dark",
-      "image": "assets/commission-4x5.jpg",
-      "alt": "Commissioned portrait placeholder",
+      "series": {
+        "layout": "feature-thumbs",
+        "caption": "The result is defined by purpose, not by a fixed formula.",
+        "images": [
+          { "src": "assets/commission-4x5.jpg", "alt": "Commissioned portrait" },
+          { "src": "assets/portrait.jpg", "alt": "Commissioned photographic portrait" },
+          { "src": "assets/priscilia.jpg", "alt": "Editorial portrait" }
+        ]
+      },
       "details": [
         {
+          "title": "Purpose",
+          "text": "We start with where the photographs will live and what they should communicate. References can define a direction, but the aim is never to reproduce somebody else's pictures."
+        },
+        {
           "title": "Direction",
-          "text": "We agree on concept, mood, styling, required perspectives and intended use. References help us define the direction without copying existing images."
+          "text": "Portrait, artist imagery, portfolio work, editorial or campaign can each require a different balance of clarity, atmosphere, context and observation. We define that balance together."
         },
         {
-          "title": "Booking",
-          "text": "Sessions are booked in two-hour blocks. A studio base fee applies in Bernapark. Additional time, travel, styling, hair and make-up or special production requirements are agreed beforehand."
-        },
-        {
-          "title": "Delivery",
-          "text": "The number of edited images, selection process, delivery time and usage rights are defined before booking. RAW files and rejected photographs are not included unless expressly agreed."
+          "title": "Individual production",
+          "text": "Scope, location, styling, production costs, usage and delivery are discussed for the actual assignment. I do not work from a fixed package of images or looks."
         }
       ],
-      "note": "Unless a written restriction is agreed before the shoot, I may also use selected photographs for my portfolio, website, social media, publications, exhibitions and other artistic or self-promotional purposes.",
       "tags": [
-        "Model portfolios",
-        "Agency updates",
-        "Artist portraits",
-        "Editorials",
-        "Campaigns",
-        "Brands",
-        "Digital",
-        "Analog",
-        "Polaroid"
+        "Portraits",
+        "Artists",
+        "Model / agency",
+        "Editorial",
+        "Fashion",
+        "Campaign",
+        "Brand imagery",
+        "Documentary portrait"
       ]
     },
     {
@@ -57,134 +132,97 @@
       "number": "02",
       "shortTitle": "Creative collaboration",
       "navTitle": "Free project",
-      "lead": "We work together because the project and my visual language interest both of us.",
-      "description": "A free collaboration is not a commissioned portfolio session. It begins with an existing series, an artistic question or a concept I want to develop with the right person.",
+      "lead": "We work together because a photographic idea and my visual direction interest both of us.",
+      "description": "A collaboration is an unpaid photographic project, not an unpaid commissioned portfolio session. It gives me room to develop my work together with a person who connects with that direction.",
       "tone": "light",
-      "image": "assets/collaboration-4x5.jpg",
-      "alt": "Creative collaboration placeholder",
+      "series": {
+        "layout": "feature-thumbs",
+        "caption": "A collaboration develops the photographic work for both sides without turning it into a client assignment.",
+        "images": [
+          { "src": "assets/collaboration-4x5.jpg", "alt": "Creative collaboration" },
+          { "src": "assets/jime1.jpg", "alt": "Free photographic project" },
+          { "src": "assets/about-form-4x5.jpg", "alt": "Photographic form study" }
+        ]
+      },
       "details": [
         {
-          "title": "Shared process",
-          "text": "Ideas are welcome, but the session is not built around a list of portfolio wishes or predetermined social-media images. Openness, presence and trust matter more than producing many looks."
+          "title": "Shared interest",
+          "text": "Ideas are welcome, but the project is not built around a list of predetermined portfolio or social-media images. Both sides should connect with what we are trying to explore."
         },
         {
-          "title": "Preparation",
-          "text": "Clothing, styling, hair and make-up are discussed beforehand. Unless agreed otherwise, the model prepares these and brings options that support the project."
+          "title": "Unpaid, not cost-free",
+          "text": "Neither side charges the other for the collaboration itself. Production costs may still arise for make-up, hair, styling, decoration, materials, travel or locations. If they do, we agree beforehand how they are shared."
         },
         {
-          "title": "Images",
-          "text": "I select, edit and sequence the photographs published under my name. The model may receive the unedited RAW files, make an independent selection, edit them and use them freely. Both sides credit each other."
+          "title": "Authorship and use",
+          "text": "Selection, editing and sequencing of photographs published under my name remain part of my authorship. How both sides may use the material is discussed openly before the project."
         }
       ],
-      "quote": "A free collaboration gives both sides independent creative use of the material.",
-      "note": "Both sides may use the photographs according to their own needs. Exceptional limits, first-publication arrangements or exclusions must be agreed in writing before the shoot."
-    },
-    {
-      "id": "model-booking",
-      "number": "03",
-      "shortTitle": "I book a model",
-      "navTitle": "Model booking",
-      "lead": "I hire a model because their presence fits a defined photographic project.",
-      "description": "The concept and direction come from my work. The model is booked to realise that production, rather than to receive a portfolio session.",
-      "tone": "dark",
-      "image": "assets/model-booking-4x5.jpg",
-      "alt": "Booked model placeholder",
-      "details": [
-        {
-          "title": "Project",
-          "text": "The project already exists or has a clear direction. The booking depends on whether the model's character, movement, presence and experience fit the work."
-        },
-        {
-          "title": "Fee",
-          "text": "Fee, duration, travel, accommodation, styling, hair and make-up and usage are agreed individually before confirmation. There is no undefined small modelling fee."
-        },
-        {
-          "title": "Authorship",
-          "text": "Selection, editing, sequencing and publication remain part of my photographic authorship. The model does not automatically receive the complete material; personal-use images can be agreed as part of the booking."
-        }
-      ],
-      "note": "Unless otherwise agreed in writing, the model fee compensates participation and does not restrict my later artistic, editorial or self-promotional use of the photographs."
+      "quote": "Both sides should leave the project with something meaningful — not necessarily the same thing."
     }
   ],
-  "trust": {
-    "eyebrow": "Respect & trust",
-    "title": "Clarity is part of trust.",
-    "intro": "Before a shoot, we agree on the purpose, direction, boundaries and use of the images. During the session, every person can pause, question or refuse a change at any time.",
-    "items": [
-      "Which working format applies",
-      "Who defines the creative direction",
-      "What we intend to create",
-      "Styling and level of exposure",
-      "Selection, editing and delivery",
-      "Publication and crediting",
-      "Fees and production costs",
-      "Who will be present"
-    ],
-    "quote": "Trust is not assumed. It is built through clarity, consent and reliability."
-  },
   "about": {
-    "eyebrow": "About the work",
-    "title": "Human presence, not performance.",
+    "eyebrow": "About me",
+    "title": "A photographer, and a life outside photography.",
     "paragraphs": [
-      "I photograph people as personalities rather than as classical models. I am interested in presence, character, form and the small moments between obvious gestures.",
-      "The work moves between portrait, form study and observation. I work slowly and consciously. The aim is not to create as many looks as possible, but a small number of strong images with a coherent language."
+      "I am Steffen Lauterbach, a semi-professional photographer living near Bern, Switzerland. I am the father of three adult daughters and, after graduating from university, spent most of my professional life working as an IT specialist.",
+      "Photography developed alongside that life and has become an increasingly important part of it. I have a particular affection for older photographic equipment, manual lenses and analogue cameras — not primarily from nostalgia, but because they encourage a slower and more deliberate way of seeing.",
+      "That way of looking also shapes my digital work. I am interested in people, but equally in the space around them and in the small relationships inside the frame that can turn a photograph into more than a picture of its subject."
     ],
-    "images": [
-      {
-        "src": "assets/about-portrait-4x5.jpg",
-        "alt": "Portrait work placeholder"
-      },
-      {
-        "src": "assets/about-form-4x5.jpg",
-        "alt": "Human form placeholder"
-      }
-    ]
+    "series": {
+      "layout": "pair",
+      "caption": "Digital and analogue approaches belong to the same way of seeing.",
+      "images": [
+        { "src": "assets/about-portrait-4x5.jpg", "alt": "Photographic portrait work" },
+        { "src": "assets/about-form-4x5.jpg", "alt": "Photographic form study" }
+      ]
+    }
   },
   "faq": {
     "eyebrow": "Practical questions",
     "title": "Before you write",
     "items": [
       {
-        "question": "I need specific portfolio images. Is that a collaboration?",
-        "answer": "No. When your requirements define the concept and result, this is a commissioned session."
+        "question": "I need specific photographs. Is that a collaboration?",
+        "answer": "If your requirements define the purpose and expected result, it is a commission. A free collaboration starts from a shared interest in a photographic project rather than from a client brief."
       },
       {
         "question": "Can I apply for a free project?",
-        "answer": "Yes. Send a current portfolio and explain what connects you to my work. A collaboration is considered when there is a strong fit with a current project."
+        "answer": "Yes. Send a current portfolio or a few recent photographs and tell me what connects you to my work. A collaboration makes sense when there is a strong fit with a current idea or direction."
       },
       {
         "question": "Do you pay models?",
-        "answer": "Yes, when I book a model for my own production. The fee and all relevant conditions are agreed before confirmation."
+        "answer": "Sometimes. For my own independent photographic projects I may book and pay a professional model when a specific person is needed. This is separate from the two ways of working together described on this page."
       },
       {
-        "question": "Do I need professional experience?",
-        "answer": "Not always. Presence, openness and reliability can matter more than experience. Some paid productions require specific professional skills."
+        "question": "Do I need professional modelling experience?",
+        "answer": "No. Experience can be useful, but presence, openness, reliability and the ability to stay with a quiet situation can matter just as much."
       },
       {
-        "question": "Can I use the images?",
-        "answer": "Yes, according to the agreed format. In a free collaboration, the model may receive and independently use the unedited RAW files. In all formats, my own usage rights remain unless restricted in writing beforehand."
+        "question": "What should I expect from a session?",
+        "answer": "A calm and concentrated process rather than continuous shooting and constant changes. We may work with very small variations for a while when a situation has potential."
       },
       {
-        "question": "Can someone accompany me?",
-        "answer": "This can be discussed beforehand. Any accompanying person must be agreed before the session."
+        "question": "What about image use and publication?",
+        "answer": "Usage depends on the type and purpose of the work and is agreed before the session. If a project requires specific limits, exclusivity or first-publication arrangements, those should be discussed before we confirm it."
       }
     ]
   },
   "studio": {
     "eyebrow": "Studio & contact",
     "title": "Bernapark",
-    "description": "My 103 m² studio is located in Bernapark, Deisswil near Bern. It has a five-metre ceiling, a large window front and fully darkenable rooms for daylight and controlled studio-light productions.",
+    "description": "My 103 m² studio is located in Bernapark, Deisswil near Bern. The high industrial space can be used with daylight or fully controlled studio light, and the surrounding area also gives us options outside the studio.",
     "facts": [
-      "Bernapark 1",
-      "CH-3066 Stettlen",
+      "Bernapark · Deisswil",
+      "Near Bern, Switzerland",
       "103 m² studio",
       "5 m ceiling height",
-      "Flash and continuous light",
-      "Indoor and nearby outdoor locations"
+      "Daylight and controlled light",
+      "Indoor and nearby outdoor work"
     ],
     "image": "assets/studio-4x5.jpg",
-    "alt": "Bernapark studio placeholder",
-    "contactText": "Please state which working format interests you, your preferred dates, location, concept and a current portfolio or reference.",
-    "closing": "Maybe our collaboration begins with clarity."
+    "alt": "Photography studio in Bernapark",
+    "contactText": "Tell me briefly who you are, what you would like to create and whether you are enquiring about a commission or a creative collaboration.",
+    "closing": "If the direction feels right, we can start with a conversation."
   }
 }

@@ -15,15 +15,9 @@ async function loadContent() {
 
 function renderNavigation(data) {
   const nav = $("#site-nav");
-  [
-    ["#formats", "Work"],
-    ["#trust", "Trust"],
-    ["#about", "About"],
-    ["#faq", "FAQ"],
-    ["#studio", "Studio"]
-  ].forEach(([href, label]) => {
-    const a = make("a", "", label);
-    a.href = href;
+  data.site.navigation.forEach(item => {
+    const a = make("a", "", item.label);
+    a.href = item.href;
     nav.append(a);
   });
 
@@ -32,6 +26,7 @@ function renderNavigation(data) {
     const open = document.body.classList.toggle("menu-open");
     button.setAttribute("aria-expanded", String(open));
   });
+
   nav.addEventListener("click", () => {
     document.body.classList.remove("menu-open");
     button.setAttribute("aria-expanded", "false");
@@ -47,11 +42,82 @@ function renderHero(data) {
   $("#hero-image").alt = data.hero.alt;
   $("#hero-caption").textContent = data.hero.caption;
 
-  data.workingFormats.forEach(format => {
-    const a = make("a", "", `<span>${format.number}</span>${format.navTitle}<i>↘</i>`);
-    a.href = `#${format.id}`;
+  data.hero.links.forEach(item => {
+    const a = make("a", "", `<span>${item.number}</span>${item.label}<i>↘</i>`);
+    a.href = item.href;
     $("#hero-links").append(a);
   });
+}
+
+function renderSeries(series, target) {
+  if (!series || !series.images?.length) return;
+
+  const wrap = make("div", `image-series image-series--${series.layout || "strip"} reveal`);
+
+  if (series.layout === "feature-thumbs") {
+    const feature = make("figure", "series-feature");
+    const mainImage = series.images[0];
+    feature.innerHTML = `<img src="${mainImage.src}" alt="${mainImage.alt || ""}">`;
+    wrap.append(feature);
+
+    const thumbs = make("div", "series-thumbs");
+    series.images.forEach((image, index) => {
+      const button = make("button", `series-thumb ${index === 0 ? "is-active" : ""}`);
+      button.type = "button";
+      button.setAttribute("aria-label", `Show image ${index + 1}`);
+      button.innerHTML = `<img src="${image.src}" alt="">`;
+      button.addEventListener("click", () => {
+        const img = $("img", feature);
+        img.src = image.src;
+        img.alt = image.alt || "";
+        thumbs.querySelectorAll(".series-thumb").forEach(node => node.classList.remove("is-active"));
+        button.classList.add("is-active");
+      });
+      thumbs.append(button);
+    });
+    wrap.append(thumbs);
+  } else {
+    const grid = make("div", "series-grid");
+    series.images.forEach(image => {
+      const figure = make("figure", "series-image");
+      figure.innerHTML = `<img src="${image.src}" alt="${image.alt || ""}">`;
+      grid.append(figure);
+    });
+    wrap.append(grid);
+  }
+
+  if (series.caption) wrap.append(make("p", "series-caption", series.caption));
+  target.append(wrap);
+}
+
+function renderExpect(data) {
+  $("#expect-eyebrow").textContent = data.expect.eyebrow;
+  $("#expect-title").textContent = data.expect.title;
+  $("#expect-intro").textContent = data.expect.intro;
+
+  data.expect.items.forEach((item, index) => {
+    $("#expect-items").append(make("article", "principle reveal", `
+      <span>${String(index + 1).padStart(2, "0")}</span>
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+    `));
+  });
+
+  renderSeries(data.expect.series, $("#expect-series"));
+}
+
+function renderProcess(data) {
+  $("#process-eyebrow").textContent = data.process.eyebrow;
+  $("#process-title").textContent = data.process.title;
+  data.process.paragraphs.forEach(text => $("#process-copy").append(make("p", "", text)));
+  $("#process-quote").textContent = data.process.quote;
+  renderSeries(data.process.series, $("#process-series"));
+}
+
+function renderWorkIntro(data) {
+  $("#work-eyebrow").textContent = data.work.eyebrow;
+  $("#work-title").textContent = data.work.title;
+  $("#work-intro").textContent = data.work.intro;
 }
 
 function renderFormats(data) {
@@ -62,7 +128,7 @@ function renderFormats(data) {
       <span class="card-number">${format.number}</span>
       <h3>${format.shortTitle}</h3>
       <p>${format.lead}</p>
-      <i>View format ↘</i>`;
+      <i>View ↘</i>`;
     $("#format-cards").append(card);
 
     const section = make("section", `section work-section ${format.tone === "dark" ? "is-dark" : ""}`);
@@ -79,9 +145,7 @@ function renderFormats(data) {
             <p>${format.description}</p>
           </div>
         </div>
-        <figure class="landscape-frame reveal">
-          <img src="${format.image}" alt="${format.alt}">
-        </figure>
+        <div class="format-series"></div>
         <div class="detail-grid">
           ${format.details.map(item => `
             <article class="reveal">
@@ -89,21 +153,12 @@ function renderFormats(data) {
               <p>${item.text}</p>
             </article>`).join("")}
         </div>
-        ${format.tags ? `<div class="tag-panel reveal"><span>Suitable for</span><div>${format.tags.map(tag => `<b>${tag}</b>`).join("")}</div></div>` : ""}
+        ${format.tags ? `<div class="tag-panel reveal"><span>Possible work</span><div>${format.tags.map(tag => `<b>${tag}</b>`).join("")}</div></div>` : ""}
         ${format.quote ? `<blockquote class="large-quote reveal">${format.quote}</blockquote>` : ""}
-        <aside class="format-note reveal"><span>Usage</span><p>${format.note}</p></aside>
       </div>`;
-    $("#format-sections").append(section);
-  });
-}
 
-function renderTrust(data) {
-  $("#trust-eyebrow").textContent = data.trust.eyebrow;
-  $("#trust-title").textContent = data.trust.title;
-  $("#trust-intro").textContent = data.trust.intro;
-  $("#trust-quote").textContent = data.trust.quote;
-  data.trust.items.forEach((item, index) => {
-    $("#trust-items").append(make("p", "", `<span>${String(index + 1).padStart(2, "0")}</span>${item}`));
+    $("#format-sections").append(section);
+    renderSeries(format.series, $(".format-series", section));
   });
 }
 
@@ -111,11 +166,7 @@ function renderAbout(data) {
   $("#about-eyebrow").textContent = data.about.eyebrow;
   $("#about-title").textContent = data.about.title;
   data.about.paragraphs.forEach(text => $("#about-copy").append(make("p", "", text)));
-  data.about.images.forEach((image, index) => {
-    const figure = make("figure", `portrait-frame reveal image-${index + 1}`);
-    figure.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
-    $("#about-images").append(figure);
-  });
+  renderSeries(data.about.series, $("#about-series"));
 }
 
 function renderFaq(data) {
@@ -157,7 +208,7 @@ function observeReveals() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: "0px 0px -4% 0px" });
+  }, { threshold: 0.1, rootMargin: "0px 0px -4% 0px" });
   document.querySelectorAll(".reveal").forEach(node => observer.observe(node));
 }
 
@@ -171,8 +222,10 @@ loadContent()
   .then(data => {
     renderNavigation(data);
     renderHero(data);
+    renderExpect(data);
+    renderProcess(data);
+    renderWorkIntro(data);
     renderFormats(data);
-    renderTrust(data);
     renderAbout(data);
     renderFaq(data);
     renderStudio(data);
